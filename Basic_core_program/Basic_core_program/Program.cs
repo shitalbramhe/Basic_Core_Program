@@ -7,7 +7,7 @@ namespace Basic_core_program
          static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core proogram");
-            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Compute Quotient and Remainder");
+            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Compute Quotient and Remainder \n 7. Swap two numbers");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
             {
@@ -39,6 +39,14 @@ namespace Basic_core_program
                     Console.WriteLine("Enter value of divisor");
                     int divisor = Convert.ToInt32(Console.ReadLine());
                     Remainder.Quotientremainder(dividend,divisor);
+                    break;
+                case 7:
+                    Swap_two_num Swap = new Swap_two_num();
+                    Console.WriteLine("Enter first number");
+                    int num1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter second number");
+                    int num2 = Convert.ToInt32(Console.ReadLine());
+                    Swap.Swaping(num1,num2);
                     break;
                 default:
                     Console.WriteLine("Invalid Selection");
