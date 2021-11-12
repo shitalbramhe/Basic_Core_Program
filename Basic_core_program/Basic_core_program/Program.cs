@@ -7,7 +7,7 @@ namespace Basic_core_program
          static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core proogram");
-            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Exit");
+            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Exit");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
             {
@@ -26,6 +26,11 @@ namespace Basic_core_program
                 case 4:
                     Harmonic Harnum = new Harmonic();
                     Harnum.Harmonic_number();
+                    break;
+                case 5:
+                    Prime_factor prime = new Prime_factor();
+                    int num = Convert.ToInt32(Console.ReadLine()); 
+                    prime.Factorization(num);
                     break;
                 default:
                     Console.WriteLine("Invalid Selection");
