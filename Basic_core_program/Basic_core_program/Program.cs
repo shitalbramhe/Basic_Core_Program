@@ -7,7 +7,7 @@ namespace Basic_core_program
          static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core proogram");
-            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Exit");
+            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Compute Quotient and Remainder");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
             {
@@ -31,6 +31,14 @@ namespace Basic_core_program
                     Prime_factor prime = new Prime_factor();
                     int num = Convert.ToInt32(Console.ReadLine()); 
                     prime.Factorization(num);
+                    break;
+                case 6:
+                    Comp_quotient Remainder = new Comp_quotient();
+                    Console.WriteLine("Enter value of dividend");
+                    int dividend = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter value of divisor");
+                    int divisor = Convert.ToInt32(Console.ReadLine());
+                    Remainder.Quotientremainder(dividend,divisor);
                     break;
                 default:
                     Console.WriteLine("Invalid Selection");
