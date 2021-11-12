@@ -13,7 +13,7 @@ namespace Basic_core_program
             int temp = num1;
             num1 = num2;
             num2 = temp;
-            Console.WriteLine("After Swapping");
+            Console.WriteLine("After Swapping two numbers are");
             Console.WriteLine("First Number : " + num1);
             Console.WriteLine("Second Number : " + num2);
         }
