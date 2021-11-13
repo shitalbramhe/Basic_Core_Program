@@ -7,7 +7,7 @@ namespace Basic_core_program
          static void Main(string[] args)
         {
             Console.WriteLine("Welcome to basic core proogram");
-            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Compute Quotient and Remainder \n 7. Swap two numbers \n 8. Even odd");
+            Console.WriteLine("Enter number  \n 1. Flip_Coin \n 2. Leap_year \n 3. Power of Two \n 4. Harmonic Number \n 5. Prime Factor \n 6. Compute Quotient and Remainder \n 7. Swap two numbers \n 8. Even odd  \n 9. Check Vowel consonant");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch(choice)
             {
@@ -53,6 +53,12 @@ namespace Basic_core_program
                     Console.WriteLine("Enter number");
                     int number = Convert.ToInt32(Console.ReadLine());
                     even_odd.Evenodd(number);
+                    break;
+                case 9:
+                    Check_Vowel_consonant vowelconsonant = new Check_Vowel_consonant();
+                    Console.WriteLine("Enter charactor");
+                    char alphabet = Convert.ToChar(Console.ReadLine());
+                    vowelconsonant.vowel_consonant(alphabet);
                     break;
                 default:
                     Console.WriteLine("Invalid Selection");
